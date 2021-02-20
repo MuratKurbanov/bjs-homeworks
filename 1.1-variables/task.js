@@ -21,10 +21,10 @@ function sayHello(userName) {
 	
 	// реализуйте здесь задание №2
 	let myName = userName;
-	let message = 'Привет, мир! Меня зовут ';
+	let message = `Привет, мир! Меня зовут ${userName}`;
+	// let message = 'Привет, мир! Меня зовут ';
 
-    
-	return message + userName;
+	return message;
 }
 
 function calculateFormula() {
