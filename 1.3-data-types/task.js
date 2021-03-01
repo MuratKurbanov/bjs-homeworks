@@ -16,7 +16,7 @@ function calculateTotalMortgage(percent, contribution, amount, date) {
 
   console.log(+freeAmount.toFixed(2));
   
-  let = totalAmount = 0 + (freeAmount * n);
+  let totalAmount = 0 + (freeAmount * n);
 
   return +totalAmount.toFixed(2);
 }
@@ -24,20 +24,28 @@ function calculateTotalMortgage(percent, contribution, amount, date) {
 
 function getGreeting(name) {
     // код для задачи №2 писать здесь
-    let noName = 'Аноним';
-    // if (name.length === 0);
-    if (name == undefined || name == null || name == '') {
-        return `Привет, мир! Меня зовут ${noName}`;
-        console.log(`Привет, мир! Меня зовут ${noName}`);
 
+    if (name === undefined || name === null || name === '') {
+        console.log('Привет, мир! Меня зовут Аноним.');
+        return 'Привет, мир! Меня зовут Аноним.';
     } else {
-        return `Привет, мир! Меня зовут ${name}`;
-        console.log(`Привет, мир! Меня зовут ${name}`);
+        console.log(`Привет, мир! Меня зовут ${name}.`);
+        return `Привет, мир! Меня зовут ${name}.`;
     }
-    return getgreeting;
 }
 
 
+// function getGreeting(name) {
+//     // код для задачи №2 писать здесь
+
+//     if (name) {
+//         console.log(`Привет, мир! Меня зовут ${name}.`);
+//         return `Привет, мир! Меня зовут ${name}.`;
+//     } else {
+//         console.log('Привет, мир! Меня зовут Аноним.');
+//         return 'Привет, мир! Меня зовут Аноним.';
+//     }
+// }
 
 // function calculateTotalMortgage(percent, contribution, amount, date) {
 //     // код для задачи №1 писать здесь
@@ -73,6 +81,9 @@ function getGreeting(name) {
 
 //     return totalAmount;
 // }
+
+// let noName = 'Аноним';
+// if (name.length === 0);
 
 // function getGreeting(name) {
 //     // код для задачи №2 писать здесь
